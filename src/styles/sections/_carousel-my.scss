@@ -1,0 +1,94 @@
+.carousel-my {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  width: 100%;
+  text-align: center;
+  padding: 64px 118px 89px 118px;
+
+  @include media-breakpoint-between(xs, sm) {
+    padding: 64px 50px 89px 50px;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+
+  .foto-and-describe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    @include media-breakpoint-between(xs, 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    img {
+      margin-right: 30px;
+      margin-top: 60px;
+    }
+
+    .describe {
+      text-align: left;
+      color: rgba(255, 255, 255, 0.85);
+
+      p.first-name {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 48px;
+        margin: 0;
+
+        @include media-breakpoint-between(xs, 768px) {
+          text-align: center;
+        }
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 48px;
+        margin: 0;
+        @include media-breakpoint-between(xs, 768px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .carousel-info {
+
+    p {
+      font-size: 19px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-top: 77px;
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+.paginator {
+  margin-top: 40px;
+  text-align: center;
+
+  img.img-paginator {
+    margin: 0 90px 0 90px;
+
+    @include media-breakpoint-between(xs, sm) {
+      margin: 0 20px 0 20px;
+    }
+
+
+  }
+
+
+}

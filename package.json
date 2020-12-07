@@ -1,0 +1,19 @@
+{
+  "name": "trafalgor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:server": " ws --directory ./dist",
+    "build:scss": "node-sass src/styles/styles.scss -o dist/css  --output-style compressed --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "local-web-server": "^4.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}

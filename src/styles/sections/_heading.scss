@@ -1,0 +1,59 @@
+.heading {
+
+  @include media-breakpoint-between(xs, sm) {
+    margin-bottom: 100px;
+  }
+
+  .header-inform {
+
+    h1 {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: bold;
+      margin-top: 90px;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-between(xs, sm) {
+        margin-top: 30px;
+      }
+
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 32px;
+      color: #7D7987;
+      margin-bottom: 45px;
+    }
+
+
+    @include media-breakpoint-between(xs, md) {
+      text-align: center;
+
+    }
+    @include media-breakpoint-between(xs, sm) {
+      padding: 30px;
+    }
+
+  }
+
+  .img-header {
+    @include media-breakpoint-between(xs, sm) {
+      margin-top: 30px;
+      padding: 30px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 650px;
+      max-height: 477px;
+      object-fit: contain;
+    }
+
+
+  }
+
+}
+
+

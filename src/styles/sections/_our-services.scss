@@ -1,0 +1,47 @@
+//.about-service {
+section.our-services {
+  text-align: center;
+  background: url("/images/sections-back/our-services.png") 0 50% no-repeat,
+  url("/images/sections-back/points.png") 87% 55% no-repeat;
+
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 80px;
+  }
+
+  .card-list {
+    height: 354px;
+    margin-bottom: 37px;
+    padding: 58px 52px 47px 36px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    border: none;
+    background: white;
+
+    @include media-breakpoint-only(xs) {
+      padding: 25px;
+    }
+
+    img {
+      margin-bottom: 22px;
+
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 56px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: #7D7987;
+    }
+  }
+
+}

@@ -1,0 +1,90 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "header";
+@import "sections/heading";
+@import "sections/our-services";
+@import "sections/big-card";
+@import "sections/carousel-my";
+@import "sections/card-list-inform";
+@import "footer";
+
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+
+  &.underline {
+    position: relative;
+    padding-bottom: 26px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 56px;
+      height: 2px;
+      background: black;
+      bottom: 0;
+      left: calc(50% - 28px);
+    }
+
+    &.left-align {
+      &:before {
+        left: 0;
+      }
+    }
+
+    &.under-white {
+      &:before {
+        background: white;
+      }
+    }
+  }
+
+  @include media-breakpoint-between(xs, sm) {
+    margin-top: 50px;
+  }
+
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 56px;
+}
+
+
+section {
+
+  h3.section-heading {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+
+  &:not(:first-child){
+    margin-top: 200px;
+
+    @include media-breakpoint-down(sm){
+      margin-top: 100px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
